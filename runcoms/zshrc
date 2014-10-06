@@ -12,3 +12,5 @@ fi
 
 # Customize to your needs...
 alias ls='ls -Gl'
+
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
