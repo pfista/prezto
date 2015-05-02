@@ -12,8 +12,5 @@ fi
 
 # Customize to your needs...
 alias ls='ls -Gl'
-<<<<<<< HEAD
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-=======
->>>>>>> added modules and alias
