@@ -27,6 +27,10 @@ if [[ -z "$PAGER" ]]; then
   export PAGER='less'
 fi
 
+if [[ -z "$GOPATH" ]]; then
+  export GOPATH='/Users/mik/src/go'
+fi
+
 #
 # Language
 #
@@ -52,6 +56,7 @@ path=(
   $HOME/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
+  $gopath/bin
   $path
 )
 
