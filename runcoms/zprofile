@@ -21,6 +21,10 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
+if [[ -z "$GOPATH" ]]; then
+  export GOPATH='/Users/mik/src/go'
+fi
+
 #
 # Language
 #
@@ -44,6 +48,7 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  $gopath/bin
   $path
 )
 
