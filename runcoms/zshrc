@@ -12,5 +12,8 @@ fi
 
 # Customize to your needs...
 alias ls='ls -Gl'
+alias vim='nvim'
 
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+export GOPATH='/Users/mik/src/go'
+
+PATH=$PATH:$GOPATH/bin
