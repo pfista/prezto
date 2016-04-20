@@ -15,5 +15,14 @@ alias ls='ls -Gl'
 alias vim='nvim'
 
 export GOPATH='/Users/mik/src/go'
+export KEYTIMEOUT=1
+
+# Use vim cli mode
+bindkey -v 
+bindkey '^P' up-history
+bindkey '^N' down-history
+
+# ctrl-r starts searching history backward
+bindkey '^r' history-incremental-search-backward
 
 PATH=$PATH:$GOPATH/bin
