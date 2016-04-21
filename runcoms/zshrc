@@ -14,8 +14,9 @@ fi
 alias ls='ls -Gl'
 alias vim='nvim'
 
-export GOPATH='/Users/mik/src/go'
+export GOPATH=$HOME/src/go
 export KEYTIMEOUT=1
+export HOMEBREW_GITHUB_API_TOKEN=''
 
 # Use vim cli mode
 bindkey -v 

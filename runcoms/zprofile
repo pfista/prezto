@@ -22,7 +22,7 @@ export VISUAL='vim'
 export PAGER='less'
 
 if [[ -z "$GOPATH" ]]; then
-  export GOPATH='/Users/mik/src/go'
+  export GOPATH=$HOME/src/go
 fi
 
 #
