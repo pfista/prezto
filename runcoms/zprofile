@@ -28,7 +28,7 @@ if [[ -z "$PAGER" ]]; then
 fi
 
 if [[ -z "$GOPATH" ]]; then
-  export GOPATH='/Users/mik/src/go'
+  export GOPATH=$HOME/src/go
 fi
 
 #
