@@ -16,7 +16,7 @@ alias vim='nvim'
 
 export GOPATH=$HOME/src/go
 export KEYTIMEOUT=1
-export HOMEBREW_GITHUB_API_TOKEN=''
+export HOMEBREW_GITHUB_API_TOKEN='e9d95a2b09cf997d8311b86ad52c21aa45107954'
 
 # Use vim cli mode
 bindkey -v 
@@ -28,5 +28,9 @@ bindkey '^w' backward-kill-word
 
 # ctrl-r starts searching history backward
 bindkey '^r' history-incremental-search-backward
+
+precmd() {
+  eval 'if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history | tail -n 1)" >>! ~/Dropbox/logs/zsh-history-$(date "+%Y-%m-%d").log; fi'
+}
 
 PATH=$PATH:$GOPATH/bin
