@@ -29,9 +29,5 @@ bindkey '^w' backward-kill-word
 # ctrl-r starts searching history backward
 bindkey '^r' history-incremental-search-backward
 
-precmd() {
-  eval 'if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history | tail -n 1)" >>! ~/Dropbox/logs/zsh-history-$(date "+%Y-%m-%d").log; fi'
-}
-
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/src/arcanist/arcanist/bin

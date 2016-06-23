@@ -9,3 +9,10 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+if [[ -e "${ZDOTDIR:-$HOME}/.zshenv.secret" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zshenv.secret"
+fi
+
+# nylas specific config
+export VAGRANT_CWD=~/src/nylas/sync-engine/
