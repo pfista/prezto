@@ -31,3 +31,6 @@ bindkey '^r' history-incremental-search-backward
 
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/src/arcanist/arcanist/bin
+
+# Alias github's hub
+eval "$(hub alias -s)"
