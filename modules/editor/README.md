@@ -40,6 +40,13 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 ```
 
 ## Theming
+### PS Context
+
+To enable the prompt context to be set, add the following to your
+*zpreztorc*.
+
+    zstyle ':prezto:module:editor' ps-context 'yes'
+
 
 To indicate when the editor is in the primary keymap (emacs or viins), add
 the following to your `theme_prompt_setup` function.
