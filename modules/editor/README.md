@@ -48,7 +48,9 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 To enable the prompt context to be set, add the following to your
 *zpreztorc*.
 
-    zstyle ':prezto:module:editor' ps-context 'yes'
+```sh
+zstyle ':prezto:module:editor' ps-context 'yes'
+```
 
 Theming
 -------

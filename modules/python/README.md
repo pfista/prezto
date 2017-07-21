@@ -73,9 +73,12 @@ is used. Replace *Developer* with your projects directory.
 ```sh
 export PROJECT_HOME="$HOME/Developer"
 ```
+<<<<<<< HEAD
 
 The variable `VIRTUALENVWRAPPER_PYTHON` tells `virtualenvwrapper` to use the
 specified full path of the `python` interpreter overriding the `$PATH` search.
+=======
+>>>>>>> [general] Switch code block formatting to use fence formatting
 
 ```sh
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
@@ -107,6 +110,7 @@ This can be enabled with:
 ```sh
 zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
 ```
+<<<<<<< HEAD
 
 `virtualenvwrapper` is automatically initialized if pre-requisites are met
 (`$VIRTUALENVWRAPPER_VIRTUALENV` is explicitly set or `virtualenv` is in
@@ -115,6 +119,8 @@ zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
 ```sh
 zstyle ':prezto:module:python:virtualenv' initialize 'no'
 ```
+=======
+>>>>>>> [general] Switch code block formatting to use fence formatting
 
 Aliases
 -------
