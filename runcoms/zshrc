@@ -17,8 +17,6 @@ alias vim='nvim'
 export GOPATH=$HOME/src/go
 export KEYTIMEOUT=1
 export HOMEBREW_GITHUB_API_TOKEN='e9d95a2b09cf997d8311b86ad52c21aa45107954'
-export NVM_DIR=$HOME/.nvm
-. "/usr/local/opt/nvm/nvm.sh"
 
 # Use vim cli mode
 bindkey -v 
@@ -34,5 +32,11 @@ bindkey '^r' history-incremental-search-backward
 PATH=$PATH:$GOPATH/bin
 PATH=$PATH:$HOME/src/arcanist/arcanist/bin
 
-# Alias github's hub
-eval "$(hub alias -s)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export nvm_dir="$home/.nvm"
+[ -s "$nvm_dir/nvm.sh" ] && \. "$nvm_dir/nvm.sh"  # this loads nvm
+[ -s "$nvm_dir/bash_completion" ] && \. "$nvm_dir/bash_completion"  # this loads nvm bash_completion
+
+eval "$(rbenv init -)"
+eval "$(direnv hook zsh)"
