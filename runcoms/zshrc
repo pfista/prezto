@@ -36,3 +36,5 @@ PATH=$PATH:$HOME/src/arcanist/arcanist/bin
 export nvm_dir="$home/.nvm"
 [ -s "$nvm_dir/nvm.sh" ] && \. "$nvm_dir/nvm.sh"  # this loads nvm
 [ -s "$nvm_dir/bash_completion" ] && \. "$nvm_dir/bash_completion"  # this loads nvm bash_completion
+
+export DOCKER_HOST=unix:///Users/pfista/.colima/default/docker.sock
